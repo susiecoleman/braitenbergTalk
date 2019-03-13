@@ -1,0 +1,241 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="reveal.js/css/theme/night.css">
+        <link rel="stylesheet" href="custom.css">
+        <script src="libraries/raphael_min.js"></script>
+        <script src="libraries/plotly-latest.min.js"></script>
+        <script src="scripts/animations.js"></script>
+        <script src="scripts/graphs.js"></script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                  <h3>A Brief Introduction to Autonomous Robots</h3>
+                  <h4>Susie Coleman</h4>
+                  <h5>Software Developer at the Guardian</h5>
+                  <h6>@susiec20</h6>
+                </section>
+
+                <section>
+                  <h1>The problem with robots...</h1>
+                </section>
+
+                <section>
+                  <img src="images/asimo.gif" /><span>(1)</span>
+                </section>
+
+                <section>
+                  <video class="stretch" controls muted src="videos/HeinzAutomato2.mp4"></video><span>(2)</span>
+                </section>
+
+                <section>
+                  <h2>Valentino Braitenberg</h2>
+                  <img src="images/Valentino_Braitenberg_Portrait.jpg" class="braitenberg" /><span>(3)</span>
+                </section>
+
+                <section>
+                  <table>
+                    <tr>
+                      <td>
+                        <img src="images/singleSensor.jpg" />
+                      </td>
+                      <td>
+                        <img class="fragment" data-fragment-index="1" src="images/singleSensorConnected.jpg" />
+                      </td>
+                    </tr>
+                  </table>
+                </section>
+
+                <section>
+                  <img class="height-85" src="images/ultrasonicNoSignal.jpg" />
+                </section>
+
+                <section>
+                  <img class="height-85" src="images/ultrasonicOutSignal.jpg" />
+                </section>
+
+                <section>
+                  <img class="height-85" src="images/ultrasonicReturnSignal.jpg" />
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/positiveOneInput.jpg" />
+                </section>
+
+                <section>
+                  <div id='directlyProp'></div>
+                  <script>
+                    this.proportionalGraph('directlyProp');
+                  </script>
+                </section>
+
+                <section>
+                  <div id='inverselyProp'></div>
+                  <script>
+                    this.inverseGraph('inverselyProp');
+                  </script>
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/negativeOneInput.jpg" />
+                </section>
+
+                <section>
+                  <table>
+                    <tr>
+                      <td>
+                        <img src="images/2Sensors.jpg" />
+                      </td>
+                      <td>
+                        <img class="fragment" data-fragment-index="1" src="images/2SensorsUncrossed.jpg" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img class="fragment" data-fragment-index="2" src="images/2SensorsCrossed.jpg" />
+                      </td>
+                      <td>
+                        <img class="fragment" data-fragment-index="3" src="images/2SensorsDoubleConnection.jpg" />
+                      </td>
+                    </tr>
+                  </table>
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/positiveUncrossed.jpg" />
+                </section>
+
+                <section>
+                  <div id="positiveUncrossed">
+                  </div>
+                  <script>
+                    this.positiveUncrossed();
+                  </script>
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/positiveCrossed.jpg" />
+                </section>
+
+                <section>
+                  <div id="positiveCrossed">
+                  </div>
+                  <script>
+                    this.positiveCrossed();
+                  </script>
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/negativeUncrossed.jpg" />
+                </section>
+
+                <section>
+                  <div id="negativeUncrossed">
+                  </div>
+                  <script>
+                    this.negativeUncrossed();
+                  </script>
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/negativeCrossed.jpg" />
+                </section>
+                <section>
+                  <div id="negativeCrossed">
+                  </div>
+                  <script>
+                    this.negativeCrossed();
+                  </script>
+                </section>
+
+                <section>
+                  <h1>But this is all still too simple...</h1>
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/2Sensors.jpg" />
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/moreSensors1.jpg" />
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/moreSensors2.jpg" />
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/moreSensors3.jpg" />
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/moreSensorsWired.jpg" />
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/moreSensorsPosNeg.jpg" />
+                </section>
+
+                <section>
+                  <div id='directlyProp2'></div>
+                  <script>
+                    this.proportionalGraph('directlyProp2');
+                  </script>
+                </section>
+
+                <section>
+                  <div id='inverselyProp2'></div>
+                  <script>
+                    this.inverseGraph('inverselyProp2');
+                  </script>
+                </section>
+
+                <section>
+                  <img src="images/normal.jpg" />
+                </section>
+
+                <section>
+                  <img src="images/exp.png" />(4)
+                </section>
+
+                <section>
+                  <img src="images/log.png" />(4)
+                </section>
+
+                <section>
+                  <img src="images/sin.png" />(4)
+                </section>
+
+                <section>
+                  <img class='height-85' src="images/polynomial.png" />(5)
+                </section>
+
+                <section>
+                  <div>
+                    <p class="reference">
+                      1. Txchnologist staff. [Internet]. Txchnologist. 2016 [cited 2 October 2016]. Available from: http://txchnologist.com/post/64298009458/mechanical-sidekicks-show-softer-side-of
+                    </p>
+                    <p class="reference">
+                      2. heinzautomato57. [Internet]. 2007 [cited 2 October 2016]. Available from: https://www.youtube.com/watch?v=JcniyQYFU6M
+                    </p>
+                    <p class="reference">
+                      3. Wegener A. Valentin Braitenberg Portrait [Internet]. 2014 [cited 2 October 2016]. Available from: https://commons.wikimedia.org/wiki/File:Valentin_Braitenberg_Portrait.jpg
+                    </p>
+                    <p class="reference">
+                      4. Venkatraman D. FooPlot | Online graphing calculator and function plotter [Internet]. Fooplot.com. 2016 [cited 6 October 2016]. Available from: http://fooplot.com/
+                    </p>
+                    <p class="reference">
+                      5. Melikamp. A plot of a polynomial function of degree 7: {\displaystyle y=x^{7}-14x^{5}+49x^{3}-36x} y=x^{{7}}-14x^{{5}}+49x^{{3}}-36x. In the graph x ranges from -3.2 to 3.2 and y ranges from -100 to 100. [Internet]. 2016 [cited 6 October 2016]. Available from: https://commons.wikimedia.org/wiki/File:Septic_graph.svg
+                    </p>
+                  </div>
+                </section>
+            </div>
+        </div>
+        <script src="reveal.js/js/reveal.js"></script>
+        <script>
+            Reveal.initialize({controls: false, progress: false, transition: 'none'});
+        </script>
+    </body>
+</html>
